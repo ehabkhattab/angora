@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imges/logo (1).png">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stayle.css">
+</head>
+
+<body>
+    
+        <div class="loading-screen position-fixed justify-content-center align-items-center" style="display: none;">
+          <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+        </div>
+    
+        <nav>
+          <div class="exam-header-nav">
+            <div class="exam-logo">
+              <img src="imges/logo (1).png">
+            </div>
+            <div class="exam-toggel-menu">
+              <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="exam-social-icon">
+              <div class="exam-lang">
+                <span>
+                  <i class="fas fa-globe"></i>
+                </span>
+              </div>
+              <div class="exam-share">
+                <span>
+                  <i class="fas fa-share-alt"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="nav-tab-menu">
+            <div class="nav-item">
+              <ul>
+                <li class="item1">
+                  <a data-list="search" class="nav-category">Search</a>
+                </li>
+                <li class="item1">
+                  <a data-list="categories" class="nav-category">Categories</a>
+                </li>
+                <li class="item2">
+                  <a data-list="a" class="nav-category">Area</a>
+                </li>
+                <li class="item3">
+                  <a data-list="i" class="nav-category">Ingredients</a>
+                </li>
+                <li class="item6">
+                  <a data-list="contact" class="nav-category">Contact Us</a>
+                </li>
+              </ul>
+             
+            </div>
+            <div class="nav-social-item">
+              <a><i class="fab fa-facebook-f"></i></a>
+              <a><i class="fab fa-twitter"></i></a>
+              <a><i class="fas fa-globe"></i></a>
+              <div class="pt-3">
+               
+                <span > Copyright Â© 2019 All Rights Reserved. </span>
+                
+              </div>
+              <img class=" w-75 rounded-circle border border-2 ms-2 mt-2 " src="1646847984068.jpg" alt="">
+            </div>
+          </div>
+        </nav>
+        <section class="py-2">
+          <div id="search-container" class="container w-75  star position-fixed"></div>
+          <section class="container text-center">
+            <div class="row" id="res"></div>
+          </section>
+    
+          <section class="container w-75 text-center my-1 py-2 mt-5 position-relative">
+            <div class="loading-container" style="display: none;">
+              <div class="sm-loading position-absolute">
+                <i class="fa fa-spinner fa-spin fa-4x"></i>
+              </div>
+            </div>
+    
+            <div class="row mt-3 p-2" id="roww">
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52977')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Corba</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53060')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Burek</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53065')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Sushi</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52978')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Kumpir</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53026')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Tamiya</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52785')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Dal fry</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52804')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Poutine</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52844')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Lasagne</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52929')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Timbits</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52948')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/1525876468.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Wontons</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52971')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/1bsv1q1560459826.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Kafteji</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53013')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Big Mac</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53027')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Koshari</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52769')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Kapsalon</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52802')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Fish pie</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52854')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Pancakes</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52887')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Kedgeree</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52906')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Flamiche</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52980')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/hyarod1565090529.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Stamppot</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53006')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Moussaka</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('53028')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/kcv6hj1598733479.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Shawarma</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52791')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Eton Mess</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52811')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Ribollita</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52871')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/wrustq1511475474.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Yaki Udon</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3    shadow">
+                <div onclick="getMeal('52926')" class="catgg shadow rounded position-relative">
+                    <div class="post ">
+                        <img src="https://www.themealdb.com/images/media/meals/ytpstt1511814614.jpg" class="w-100 rounded">
+                        <div class="layer d-flex align-items-center ">
+                            <div class="info p-2">
+                                <h2>Tourtiere</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+          </section>
+        </section>
+       
+        <script src="./j.s/jquery-3.6.1.min.js"></script>
+        <script src="./j.s/all.min.js"></script>
+        <script src="./j.s/bootstrap.bundle.min.js"></script>
+        <script src="./j.s/index.js"></script>
+</body>
+
+</html>
